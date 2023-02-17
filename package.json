@@ -29,7 +29,7 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "start:staging": "env-cmd -f .env.staging react-scripts start",
     "start:production": "env-cmd .env.production react-scripts start",
-    "build": "env-cmd .env.development react-scripts build",
+    "build": "env-cmd .env.development CI='' react-scripts build",
     "build:staging": "env-cmd -f .env.staging react-scripts build",
     "build:production": "react-scripts build",
     "test": "react-scripts test",
